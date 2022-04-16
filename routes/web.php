@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MarvelController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [MarvelController::class, 'index']);
+Route::get('page/{page}', [MarvelController::class, 'index']);
+
+Route::get('character/{id}', [MarvelController::class, 'character']);
+Route::get('comic/{id}', [MarvelController::class, 'comic']);
+Route::get('event/{id}', [MarvelController::class, 'event']);
+Route::get('series/{id}', [MarvelController::class, 'series']);
+Route::get('stories/{id}', [MarvelController::class, 'story']);
