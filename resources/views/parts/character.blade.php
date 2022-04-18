@@ -2,6 +2,7 @@
     <div class='flex max-w-sm w-full h-full bg-white shadow-md rounded-lg overflow-hidden mx-auto'>
         <div class='bg-gray-800'></div>
 
+        <a href="{{ url('character/'.$character['id']) }}" >
         <div class="overflow-hidden w-full rounded-xl relative transform hover:-translate-y-2 transition ease-in-out duration-500 shadow-lg hover:shadow-2xl movie-item text-white movie-card" data-movie-id="438631">
             <div class="absolute inset-0 z-10 transition duration-300 ease-in-out bg-gradient-to-t from-black via-gray-900 to-transparent"></div>
             <div class="relative cursor-pointer group z-10 px-10 pt-10 space-y-6 movie_info" data-lity="" href="https://www.youtube.com/embed/aSHs224Dge0">
@@ -54,7 +55,7 @@
                 </a>
             </div>
         </div>
-
+        </a>
     </div>
 
 </div>
